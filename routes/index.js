@@ -46,7 +46,7 @@ router.post('/login', function (req, res) {
 // 3. 返回响应数据
 // 3.1. 如果 user 没有值, 返回一个错误的提示: 用户名或密码错误
     if(!user) {
-      res.send({code: 1, msg: '用户名或密码错误'})
+      res.send({code: 1, msg: '用户名hhh或密码错误'})
     } else {
 // 生成一个 cookie(userid: user._id), 并交给浏览器保存
       res.cookie('userid', user._id, {maxAge: 1000*60*60*24*7})
